@@ -3,13 +3,37 @@
 <head>
   <title>Stake Simulator</title>
   <link rel="stylesheet" href="css/materialize.min.css">
-  <script src="javascripts/angular.min.js"></script>
-  <script src="javascripts/controller.js"></script>
-  <script src="javascripts/materialize.min.js"></script>
+  <javascripts src="js/angular.min.js"></javascripts>
+  <javascripts src="js/controller.js"></javascripts>
+  <javascripts src="js/materialize.min.js"></javascripts>
 </head>
 
-<body>
-
+<body data-ng-controller="Controller as ctrl">
+<nav>
+  <div class="nav-wrapper indigo">
+    <div class="col s12">This div is 12-columns wide on all screen sizes</div>
+    <a href="#" class="brand-logo">Proof of Stake</a>
+  </div>
+</nav>
+<h2>Number coins</h2>
+<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
 </body>
 
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Stake Simulator</h5>
+        <p class="grey-text text-lighten-4">Selection and participation algorithm simulator.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2019 Copyright Distributed systems.
+    </div>
+  </div>
+</footer>
+
 </html>
+
