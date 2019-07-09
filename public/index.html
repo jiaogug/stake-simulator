@@ -1,28 +1,34 @@
 <html>
-
 <head>
   <title>Stake Simulator</title>
   <link rel="stylesheet" href="css/materialize.min.css">
   <javascripts src="js/angular.min.js"></javascripts>
   <javascripts src="js/controller.js"></javascripts>
   <javascripts src="js/materialize.min.js"></javascripts>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-
 <body data-ng-controller="Controller as ctrl">
 <nav>
-  <div class="nav-wrapper indigo">
-    <div class="col s12">This div is 12-columns wide on all screen sizes</div>
-    <a href="#" class="brand-logo">Proof of Stake</a>
+  <div class="nav-wrapper indigo yellow darken-1">
+    <div style="font-size:3vw;text-align:center;">Proof of Stake</div>
   </div>
 </nav>
-<h2>Number coins</h2>
-<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
-</body>
-
-<footer class="page-footer">
+<main class="container">
+  <div class="container ">
+    <div class="row vain-wrapper">
+      <h4>Number Coins: 000</h4>
+    </div>
+    <label style="font-size:2vw;text-align:center;">Amount of coins to bet</label>
+    <div class="input-field col s6">
+      <input id="Amount of coins to bet" type="text" class="validate">
+    </div>
+    <a class="waves-effect waves-light btn green accent-3"><i class="material-icons left green accent-3">attach_money</i>BET</a>
+  </div>
+</main>
+<footer class="page-footer yellow darken-4">
   <div class="container">
     <div class="row">
-      <div class="col l6 s12">
+      <div class="col 20 s12">
         <h5 class="white-text">Stake Simulator</h5>
         <p class="grey-text text-lighten-4">Selection and participation algorithm simulator.</p>
       </div>
@@ -30,10 +36,9 @@
   </div>
   <div class="footer-copyright">
     <div class="container">
-      © 2019 Copyright Distributed systems.
+      © 2019 Copyright Distributed Systems.
     </div>
   </div>
 </footer>
-
+</body>
 </html>
-
