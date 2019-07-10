@@ -1,5 +1,4 @@
 <html>
-
 <head>
   <title>Stake Simulator</title>
   <link rel="stylesheet" href="css/materialize.min.css">
@@ -7,7 +6,6 @@
   <script src="javascripts/angular.min.js"></script>
   <script src="javascripts/controllerServer.js"></script>
 </head>
-
 <body data-ng-controller="Controller as ctrl">
 <nav>
   <div class="nav-wrapper indigo">
@@ -15,6 +13,32 @@
     <a href="#" class="brand-logo">Proof of Stake</a>
   </div>
 </nav>
+<<<<<<< HEAD
+<main class="container">
+  <h2>Number coins</h2>
+  <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
+  <table>
+    <thead>
+    <tr>
+      <th>Block info</th>
+      <th>Validator IP</th>
+      <th>Participation</th>
+      <th>Accepted</th>
+      <th>Rejected</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="information in controller.clocks">
+      <td>{{information.ip}}</td>
+      <td>{{information.time}}</td>
+      <td>{{information.servertime}}</td>
+      <td>{{information.difference}}</td>
+    </tr>
+    </tbody>
+  </table>
+</main>
+<footer class="page-footer yellow darken-4">
+=======
 <h2>Number coins</h2>
 <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
 
@@ -40,9 +64,10 @@
 </table>
 
 <footer class="page-footer">
+>>>>>>> c872fb4743d6e6f0dedbd87b2d27271591b81859
   <div class="container">
     <div class="row">
-      <div class="col l6 s12">
+      <div class="col 20 s12">
         <h5 class="white-text">Stake Simulator</h5>
         <p class="grey-text text-lighten-4">Selection and participation algorithm simulator.</p>
       </div>
@@ -50,11 +75,13 @@
   </div>
   <div class="footer-copyright">
     <div class="container">
-      © 2019 Copyright Distributed systems.
+      © 2019 Copyright Distributed Systems.
     </div>
   </div>
 </footer>
+<<<<<<< HEAD
+=======
 
+>>>>>>> c872fb4743d6e6f0dedbd87b2d27271591b81859
 </body>
 </html>
-
