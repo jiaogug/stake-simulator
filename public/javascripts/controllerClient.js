@@ -3,7 +3,7 @@ angular.module('app', [])
 
         let controller = this;
         const COUNTRY = 'es-CO';
-        const IP = 'http://192.168.137.1:3000/server';
+        const IP = 'http://localhost:3000/server';
         const CLIENTS = [];
 
         controller.coins = Math.floor(Math.random() * (1000 - 100)) + 100;
@@ -17,8 +17,4 @@ angular.module('app', [])
                 console.log('Error');
             });
         };
-
-        controller.addClient = function () {
-            //$http.post(IP+'/addClient', );
-        }
     }]);

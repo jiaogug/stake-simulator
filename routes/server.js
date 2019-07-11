@@ -18,7 +18,7 @@ router.post('/bet', function(req, res) {
 });
 
 router.get('/update', function (req,res) {
-  res.send(clients);
+  res.send({'clients': clients});
 });
 
 module.exports = router;

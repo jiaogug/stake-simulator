@@ -3,20 +3,19 @@ angular.module('app', [])
 
         let controller = this;
 
-        const IP = 'http://192.168.137.1:3000/server';
+        const IP = 'http://localhost:3000/server';
         const COUNTRY = 'es-CO';
         controller.time = new Date(Date.now()).toLocaleTimeString(COUNTRY);
         controller.clients = [];
 
         controller.updateClients = function () {
-            console.log('asd');
-            /*setInterval(function () {
-                $http.get(IP+'/update', function () {}).then(function (req) {
-                   controller.clients = req.body;
-                      console.log(req.body);
+            setInterval(function () {
+                $http.get(IP+'/update').then(function (res) {
+                    controller.clients = res.data.clients;
+                    console.log('Clientes: ' + controller.clients);
                 }, function () {
                     console.log('Error');
                 });
-            },2000);*/
+            },5000);
         };
     }]);
