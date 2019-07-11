@@ -16,7 +16,7 @@
 <main class="container">
   <h2>Number coins</h2>
   <a class="waves-effect waves-light btn">button</a>
-  <table>
+  <table data-ng-init="ctrl.updateClients()">
     <thead>
     <tr>
       <th>Block info</th>
@@ -27,11 +27,10 @@
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="information in controller.clocks">
-      <td>{{information.ip}}</td>
-      <td>{{information.time}}</td>
-      <td>{{information.servertime}}</td>
-      <td>{{information.difference}}</td>
+    <tr ng-repeat="info in ctrl.clients">
+      <td>{{info.ip}}</td>
+      <td>{{info.time}}</td>
+      <td>{{info.coins}}</td>
     </tr>
     </tbody>
   </table>
