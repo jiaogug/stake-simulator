@@ -2,7 +2,7 @@ angular.module('app', [])
     .controller('Controller', ['$http', function ($http) {
 
         let controller = this;
-
+        
         const IP = 'http://localhost:3000/server';
         const COUNTRY = 'es-CO';
         controller.time = new Date(Date.now()).toLocaleTimeString(COUNTRY);
@@ -18,4 +18,12 @@ angular.module('app', [])
                 });
             },5000);
         };
+        
+        controller.closeClients = function () {
+            $http.get(IP+'/close').then(function (res) {
+                alert('apuestas cerradas');
+            }, function () {
+                console.log('Error');
+            });
+        }
     }]);

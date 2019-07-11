@@ -15,15 +15,18 @@
 </nav>
 <main class="container">
   <h2>Number coins</h2>
-  <a class="waves-effect waves-light btn">button</a>
+  <div class="row">
+    <a class="waves-effect waves-light btn col s4 " data-ng-click="ctrl.closeClients()">Close Bids</a>
+    <a class="waves-effect waves-light btn col s4 ">Select BlackSmith</a>
+    <a class="waves-effect waves-light btn col s4 ">Generate Revenue</a>
+  </div>
+
   <table data-ng-init="ctrl.updateClients()">
     <thead>
     <tr>
-      <th>Block info</th>
-      <th>Validator IP</th>
-      <th>Participation</th>
-      <th>Accepted</th>
-      <th>Rejected</th>
+      <th>Client IP</th>
+      <th>Initial Time</th>
+      <th>Coin's Bet</th>
     </tr>
     </thead>
     <tbody>
