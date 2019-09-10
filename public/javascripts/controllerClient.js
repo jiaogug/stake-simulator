@@ -3,7 +3,7 @@ angular.module('app', [])
 
         let controller = this;
         const COUNTRY = 'es-CO';
-        const IP = 'https://hidden-island-40074.herokuapp.com/server';
+        const IP = 'https://desolate-retreat-73969.herokuapp.com/server';
         const CLIENTS = [];
         var isOpen = true;
         var isBlacksmith = false;
