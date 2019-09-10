@@ -3,7 +3,7 @@ angular.module('app', [])
 
         let controller = this;
         
-        const IP = 'http://localhost:3000/server';
+        const IP = 'https://hidden-island-40074.herokuapp.com/server';
         const COUNTRY = 'es-CO';
         controller.time = new Date(Date.now()).toLocaleTimeString(COUNTRY);
         controller.clients = [];
